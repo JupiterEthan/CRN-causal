@@ -1,13 +1,13 @@
-# Learning Complex Spectral Mapping with Gated Convolutional Recurrent Networks for Monaural Speech Enhancement
+# A Convolutional Recurrent Neural Network for Real-Time Speech Enhancement
 
-This repository provides an implementation of the gated convolutional recurrent network (GCRN) for monaural speech enhancement, developed in ["Learning complex spectral mapping with gated convolutional recurrent networks for monaural speech enhancement"](https://web.cse.ohio-state.edu/~wang.77/papers/Tan-Wang.taslp20.pdf), IEEE/ACM Transactions on Audio, Speech, and Language Processing, vol. 28, pp. 380-390, 2020.
+This repository provides an implementation of the convolutional recurrent network (CRN) for monaural speech enhancement, developed in ["A convolutional recurrent neural network for real-time speech enhancement"](https://web.cse.ohio-state.edu/~wang.77/papers/Tan-Wang1.interspeech18.pdf), Proceedings of Interspeech, pp. 3229-3233, 2018. In the paper, a causal convolutional recurrent network was proposed to perform spectral mapping, which combines a convolutional encoder-decoder and long short-term memory. 
 
 ## Installation
 The program is developed using Python 3.7.
 Clone this repo, and install the dependencies:
 ```
-git clone https://github.com/JupiterEthan/GCRN-complex.git
-cd GCRN-complex
+git clone https://github.com/JupiterEthan/CRN-causal.git
+cd CRN-causal
 pip install -r requirements.txt
 ```
 
@@ -157,13 +157,11 @@ You will find that some files above are missing in your directory tree. Those ar
 
 ## How to cite
 ```
-@article{tan2020learning,
-  title={Learning complex spectral mapping with gated convolutional recurrent networks for monaural speech enhancement},
+@inproceedings{tan2018convolutional,
+  title={A Convolutional Recurrent Neural Network for Real-Time Speech Enhancement},
   author={Tan, Ke and Wang, DeLiang},
-  journal={IEEE/ACM Transactions on Audio, Speech, and Language Processing},
-  volume={28},
-  pages={380--390},
-  year={2020},
-  publisher={IEEE}
+  booktitle={Interspeech},
+  pages={3229--3233},
+  year={2018}
 }
 ```
